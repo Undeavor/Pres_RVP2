@@ -13,125 +13,123 @@
         window.MathJax = {
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                displayMath: [['$$', '$$']]
             }
         };
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <section class="hero">
     <h1>🚀 Portfolio Optimization: MGARCH-GJR & VAR</h1>
-    <p>Rendez-vous de Projet 2 (RVP2) - État d'avancement et Pilotage</p>
-    <div class="status-badge">Situation au : Avril 2026</div>
+    <p>Rendez-vous de Projet 2 (RVP2) - État d'avancement et Pilotage [cite: 330, 583]</p>
+    <div class="status-badge">Situation au : Avril 2026 [cite: 544]</div>
 </section>
 
 <section class="content-block">
     <h2>📌 Synthèse du Projet</h2>
-    <p>Ce projet développe un pipeline d'optimisation de portefeuille automatisé combinant la modélisation de la volatilité multidimensionnelle et la prédiction de rendements[cite: 1, 2].</p>
+    <p>Ce projet développe un pipeline d'optimisation de portefeuille automatisé combinant la modélisation de la volatilité multidimensionnelle et la prédiction de rendements[cite: 311, 312].</p>
     <div class="grid-3">
         <div class="card">
             <h3>Modélisation</h3>
-            <p>Estimation BEKK-GJR(1,1) pour capturer l'effet de levier et les corrélations dynamiques[cite: 4, 12].</p>
+            <p>Estimation BEKK-GJR(1,1) pour capturer l'effet de levier et les corrélations dynamiques[cite: 314, 322].</p>
         </div>
         <div class="card">
             <h3>Prédiction</h3>
-            <p>Modèle VAR (Vector Autoregression) pour les prévisions de rendement à $t+1$[cite: 2, 7].</p>
+            <p>Modèle VAR (Vector Autoregression) pour les prévisions de rendement à $t+1$[cite: 317].</p>
         </div>
         <div class="card">
             <h3>Interface</h3>
-            <p>Dashboard Streamlit interactif pour le pilotage et le backtest en temps réel[cite: 10, 11].</p>
+            <p>Dashboard Streamlit interactif pour le pilotage et le backtest en temps réel[cite: 320, 321].</p>
         </div>
     </div>
 </section>
 
 <section class="content-block">
     <h2>📊 Pilotage et Avancement (Reporting)</h2>
-    <p>Conformément aux attendus du RVP2, voici l'état de situation synthétique des lots de travaux[cite: 272, 273]:</p>
+    <p>Conformément aux attendus du RVP2, voici l'état de situation synthétique des lots de travaux[cite: 585, 608]:</p>
     <table>
         <thead>
             <tr>
-                <th>Livrable / Tâche</th>
-                <th>Avancement</th>
-                <th>Situation</th>
-                <th>Tendance</th>
-                <th>Commentaires</th>
+                <th>Livrable / Tâche [cite: 545]</th>
+                <th>Avancement [cite: 492]</th>
+                <th>Situation [cite: 545]</th>
+                <th>Tendance [cite: 532]</th>
+                <th>Commentaires [cite: 501]</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Lot 1 : État de l'art</td>
                 <td>100%</td>
-                <td>✅ Conforme</td>
+                <td>✅ Conforme [cite: 547]</td>
                 <td>➡️</td>
-                <td>Clôturé pour le RVP2[cite: 289].</td>
+                <td>Clôturé pour le RVP2[cite: 599].</td>
             </tr>
             <tr>
                 <td>Lot 2 : Moteur GJR-BEKK</td>
                 <td>100%</td>
-                <td>✅ Conforme</td>
+                <td>✅ Conforme [cite: 547]</td>
                 <td>➡️</td>
-                <td>Optimisé via <code>numba</code>[cite: 5].</td>
+                <td>Optimisé via numba[cite: 315].</td>
             </tr>
             <tr>
                 <td>Lot 3 : Optimisation Sharpe</td>
                 <td>85%</td>
-                <td>🟠 Difficulté</td>
+                <td>🟠 Difficulté [cite: 548]</td>
                 <td>↗️</td>
-                <td>Affinage de la pénalité sur frais[cite: 9, 12].</td>
+                <td>Affinage de la pénalité sur frais[cite: 319].</td>
             </tr>
             <tr>
                 <td>Lot 4 : Dashboard Pilotage</td>
                 <td>60%</td>
                 <td>🔵 En cours</td>
                 <td>↗️</td>
-                <td>Intégration des fichiers <code>.npz</code>.</td>
+                <td>Intégration des fichiers .npz[cite: 316].</td>
             </tr>
         </tbody>
     </table>
-    <p class="caption">Légende : ✅ Satisfaisant | 🟠 Difficulté résolue en interne | 🔵 Conforme[cite: 236].</p>
+    <p class="caption">Légende : ✅ Satisfaisant | 🟠 Difficulté résolue en interne | 🔵 Conforme[cite: 546].</p>
 </section>
 
 <section class="content-block warning-box">
     <h2>⚠️ Gestion des Aléas (Méthode des 5M)</h2>
-    <p>Le pilotage a permis d'anticiper les dysfonctionnements dans les dimensions suivantes[cite: 83, 88]:</p>
+    <p>Le pilotage a permis d'anticiper les dysfonctionnements dans les dimensions suivantes[cite: 381, 398]:</p>
     <ul>
-        <li><strong>Méthodes :</strong> Lenteur de l'optimisation par maximum de vraisemblance sur CPU.
-            <br><em>Action corrective :</em> Passage à une approche vectorisée dans <code>cov_to_weights.py</code>[cite: 8].</li>
-        <li><strong>Moyens :</strong> Besoin d'accélération JIT.
-            <br><em>Décision :</em> Utilisation de la compilation <code>numba</code> pour tenir les délais[cite: 5].</li>
-        <li><strong>Pilotage :</strong> Arbitrage des priorités pour sécuriser le backtest robuste avant la complexité[cite: 85, 120].</li>
+        <li><strong>Méthodes :</strong> Lenteur de l'optimisation par maximum de vraisemblance sur CPU[cite: 401].
+            <br><em>Action corrective :</em> Passage à une approche vectorisée dans <code>cov_to_weights.py</code>[cite: 318, 394].</li>
+        <li><strong>Moyens :</strong> Besoin d'accélération JIT[cite: 400].
+            <br><em>Décision :</em> Utilisation de la compilation <code>numba</code> pour tenir les délais[cite: 315, 413].</li>
+        <li><strong>Pilotage :</strong> Arbitrage des priorités pour sécuriser le backtest robuste avant la complexité[cite: 463].</li>
     </ul>
 </section>
 
 <section class="content-block">
     <h2>🔍 Fondamentaux Théoriques</h2>
     <div class="math-container">
-        <p>Dynamique de la matrice de covariance $H_t$ (BEKK-GJR) :</p>
+        <p>Dynamique de la matrice de covariance $H_t$ (BEKK-GJR)[cite: 322]:</p>
         $$H_t = CC^\top + A^\top \epsilon_{t-1}\epsilon_{t-1}^\top A + B^\top H_{t-1} B + G^\top (\epsilon_{t-1}\epsilon_{t-1}^\top \odot I_{\epsilon_{t-1}<0}) G$$
-        <p>Régularisation pour le contrôle des coûts de transaction :</p>
+        <p>Régularisation pour le contrôle des coûts de transaction[cite: 319, 322]:</p>
         $$w_{target} = w_{opt} - \lambda_{tc} \cdot (w_{opt} - w_{prev})$$
-        
     </div>
 </section>
 
 <section class="content-block">
     <h2>🛡️ Anticipation des Risques</h2>
-    <p>Analyse de criticité ($C = F \times I \times D$) pour sécuriser la réussite[cite: 266, 278]:</p>
+    <p>Analyse de criticité ($C = F \times I \times D$) pour sécuriser la réussite du projet[cite: 576]:</p>
     <ul>
-        <li><strong>Overfitting (C=12) :</strong> Criticité Élevée.
-            <br><em>Mesure :</em> Échantillon de test systématique (15% des données)[cite: 4].</li>
-        <li><strong>Glissement de planning (C=8) :</strong> Criticité Moyenne.
-            <br><em>Mesure :</em> Réunions de coordination hebdomadaires le mercredi[cite: 142].</li>
+        <li><strong>Overfitting (C=12) :</strong> Criticité Élevée[cite: 576].
+            <br><em>Mesure :</em> Échantillon de test systématique sur 15% des données[cite: 577, 588].</li>
+        <li><strong>Glissement de planning (C=8) :</strong> Criticité Moyenne[cite: 576].
+            <br><em>Mesure :</em> Réunions de coordination hebdomadaires le mercredi[cite: 452, 577].</li>
     </ul>
 </section>
 
 <section class="footer">
-    <p>Lien vers l'application : <a href="https://projetetude28.streamlit.app/" target="_blank">🚀 Dashboard Live</a> | Projet d'Étude ECL</p>
+    <p>Lien vers l'application : <a href="https://projetetude28.streamlit.app/" target="_blank">🚀 Dashboard Live</a> | Projet d'Étude ECL [cite: 334]</p>
 </section>
 
 </body>
